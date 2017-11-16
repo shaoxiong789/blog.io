@@ -71,7 +71,7 @@
             
           </div>
           <script src="/blog.io/assets/js/APlayer.min.js"> </script><p>在技术社区中，经常会看见一些博客鼓吹编程语言的各种【高级特性】与【进阶模式】，并且给出一些使用这些特性的【优雅】代码。那么学习和使<br>用这些东西是好是坏，有何利弊呢？本文旨在帮助你给出自己的判断。</p>
-<h3 id="技巧的小聪明与大智慧"><a href="#技巧的小聪明与大智慧" class="headerlink" title="技巧的小聪明与大智慧"></a>技巧的小聪明与大智慧</h3><p>有不少人以使用语言、框架的冷门特性为荣，通过使用各种生僻的 API 来展示自己对框架的熟悉，进而认为自己的编程能力和技术水平比起编写朴素逻辑的同学要高。这个观点合理吗？下面，我们用几个例子来给出一个推论：</p>
+<h2 id="技巧的小聪明与大智慧"><a href="#技巧的小聪明与大智慧" class="headerlink" title="技巧的小聪明与大智慧"></a>技巧的小聪明与大智慧</h2><p>有不少人以使用语言、框架的冷门特性为荣，通过使用各种生僻的 API 来展示自己对框架的熟悉，进而认为自己的编程能力和技术水平比起编写朴素逻辑的同学要高。这个观点合理吗？下面，我们用几个例子来给出一个推论：</p>
 <p>首先，在招聘开发同学时，有一个很有趣的现象，即对于越高层级的应聘者，对具体编码技巧的考察越少，而对架构能力、业务理解、工程素质的考察越多。请注意，对架构、业务与工程的理解绝非通用性的沟通、管理等【软素质】，而是作为工程师实打实的专业能力。</p>
 <p>另一方面，在技术社区中最火热的内容，往往是各种框架、类库的【入门指南】。从各种爆款的【XXX 从入门到精通】到【手把手教你学 XXX】，最热门的内容的仍然是这些 API 怎么调、模式怎么套一类的技巧性知识。</p>
 <p>综合这些现象以及一些常识，我们可以得到下面这三个条件：</p>
@@ -91,7 +91,7 @@
 <p>Use your best judgement.</p>
 </blockquote>
 <p>虽然好听，但这其实一个非常形而上的概念。下面我们会做一些更具体化的讨论，抽离出一些常见的奇技淫巧。</p>
-<h3 id="常见的奇技淫巧"><a href="#常见的奇技淫巧" class="headerlink" title="常见的奇技淫巧"></a>常见的奇技淫巧</h3><blockquote>
+<h2 id="常见的奇技淫巧"><a href="#常见的奇技淫巧" class="headerlink" title="常见的奇技淫巧"></a>常见的奇技淫巧</h2><blockquote>
 <p>幸福的家庭都是相似的，不幸的家庭各有各的不幸。<br>——托尔斯泰<br>好的代码都是相似的，烂的代码各有各的烂。<br><del>——鲁迅</del></p>
 </blockquote>
 <p>如果我们用【奇技淫巧】来评价某段代码，那么这段代码的质量多半好不到哪里去。对于使用了各种技巧的代码，我们也能够找到不少【把技巧运用得很糟糕】的场景，来指明它们各自的问题所在。</p>
@@ -148,8 +148,7 @@
 <p>【高阶】听起来就是个纯净的圣杯。【高阶函数】和【高阶组件】看上去更是【高端程序员】的绝配。不过，如果需要维护这样的高阶函数，你会怎么想呢？</p>
 <p><code>() =&gt; () =&gt; () =&gt; () =&gt; 123</code></p>
 <p>一个 <code>返回返回返回返回 123 的函数的函数的函数的函数</code>，确实很高阶，但真的不会把你绕晕吗…</p>
-<p>总结</p>
-<p>不少同学如果一路读完（忍受）到了这里，可能会吐槽【这些技巧在复杂啊高级啊什么的场景下很重要啊 blahblah】，故而在最后澄清几点：</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>不少同学如果一路读完（忍受）到了这里，可能会吐槽【这些技巧在复杂啊高级啊什么的场景下很重要啊 blahblah】，故而在最后澄清几点：</p>
 <blockquote>
 <p>对于多数影响维护性的技巧，在日常编写的业务逻辑里不仅不需出现，还应尽量避免。尤其对于【这里刚好能用上昨天学的那个 API】这类的动机，更需要三思。<br>在正经的大型开源项目中，不可避免地存在不少技巧性 Hack。这时候你很可能会发现相应的地方会有不少注释不厌其烦地告诉你为什么这么写，这是<strong>非常</strong>值得借鉴学习的。<br>这里并不是反对去掌握高阶的编程技巧，而是希望不要将一些【自作聪明】的代码草率地引入正式项目中，给后面的维护带来不便。<br>如果希望抛开业务项目的沉重包袱，去学习一下如何【正确地运用奇技淫巧】，参与开源项目或许是一条捷径。对于这一点，希望本文的前作 零起点的开源社区贡献指南 能够有所帮助。</p>
 </blockquote>
@@ -179,7 +178,7 @@
     <div class="toc-container">
         <h1>目录</h1>
         <div class="content">
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#技巧的小聪明与大智慧"><span class="toc-number">1.</span> <span class="toc-text">技巧的小聪明与大智慧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见的奇技淫巧"><span class="toc-number">2.</span> <span class="toc-text">常见的奇技淫巧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用危险语义"><span class="toc-number">3.</span> <span class="toc-text">使用危险语义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#套用设计模式"><span class="toc-number">4.</span> <span class="toc-text">套用设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#紧缩代码行数"><span class="toc-number">5.</span> <span class="toc-text">紧缩代码行数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式改写常识"><span class="toc-number">6.</span> <span class="toc-text">隐式改写常识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重复发明轮子"><span class="toc-number">7.</span> <span class="toc-text">重复发明轮子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#追求高阶抽象"><span class="toc-number">8.</span> <span class="toc-text">追求高阶抽象</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#技巧的小聪明与大智慧"><span class="toc-number">1.</span> <span class="toc-text">技巧的小聪明与大智慧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见的奇技淫巧"><span class="toc-number">2.</span> <span class="toc-text">常见的奇技淫巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用危险语义"><span class="toc-number">2.1.</span> <span class="toc-text">使用危险语义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#套用设计模式"><span class="toc-number">2.2.</span> <span class="toc-text">套用设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#紧缩代码行数"><span class="toc-number">2.3.</span> <span class="toc-text">紧缩代码行数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式改写常识"><span class="toc-number">2.4.</span> <span class="toc-text">隐式改写常识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重复发明轮子"><span class="toc-number">2.5.</span> <span class="toc-text">重复发明轮子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#追求高阶抽象"><span class="toc-number">2.6.</span> <span class="toc-text">追求高阶抽象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li></ol>
         </div>
     </div>
     
