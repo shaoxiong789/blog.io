@@ -52,100 +52,97 @@
   </div>
 </header>
 
-  <main id='tags'>
-  <div class="tags-container">
-  <div id='tag_cloud' class="tags">
-      
-          <a href="#javascript" title="javascript" rel="2">javascript</a>
-      
-          <a href="#原型链" title="原型链" rel="1">原型链</a>
-      
-          <a href="#鸡汤" title="鸡汤" rel="1">鸡汤</a>
-      
-          <a href="#情商" title="情商" rel="1">情商</a>
-      
-  </div>
-  
-  <div class="tag-list">
-      <span class="fa fa-tag listing-seperator" id="javascript">
-          <span class="tag-text">javascript</span>
-      </span>
-      
-        <div class="post-preview">
-            <a href="/blog.io/2017/11/15/javascriptprototype1/">
-                <h2 class="post-title">
-                    深入理解javascript原型继承
-                </h2>
-                
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-      
-        <div class="post-preview">
-            <a href="/blog.io/2017/11/16/别再拿奇技淫巧搬砖了/">
-                <h2 class="post-title">
-                    别再拿奇技淫巧搬砖了
-                </h2>
-                
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-      
-  </div>
-  
-  <div class="tag-list">
-      <span class="fa fa-tag listing-seperator" id="原型链">
-          <span class="tag-text">原型链</span>
-      </span>
-      
-        <div class="post-preview">
-            <a href="/blog.io/2017/11/15/javascriptprototype1/">
-                <h2 class="post-title">
-                    深入理解javascript原型继承
-                </h2>
-                
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-      
-  </div>
-  
-  <div class="tag-list">
-      <span class="fa fa-tag listing-seperator" id="鸡汤">
-          <span class="tag-text">鸡汤</span>
-      </span>
-      
-        <div class="post-preview">
-            <a href="/blog.io/2017/11/14/一个人有没有文化，看他发的朋友圈/">
-                <h2 class="post-title">
-                    一个人有没有文化，看他发的朋友圈
-                </h2>
-                
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-      
-  </div>
-  
-  <div class="tag-list">
-      <span class="fa fa-tag listing-seperator" id="情商">
-          <span class="tag-text">情商</span>
-      </span>
-      
-        <div class="post-preview">
-            <a href="/blog.io/2017/11/14/一个人有没有文化，看他发的朋友圈/">
-                <h2 class="post-title">
-                    一个人有没有文化，看他发的朋友圈
-                </h2>
-                
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-      
-  </div>
+  <main id='post'>
+  <div class="content">
+    <article>
+        <section class="content markdown-body">
+          <h1>无标题</h1>
+          <div class='post-meta'>
+            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2017年11月16日</time>
+            
+            
+          </div>
+          <script src="/blog.io/assets/js/APlayer.min.js"> </script>
+        </section>
+    </article>
     
+        <!-- disqus 评论框 start -->
+        <div class="comment">
+            <div id="disqus_thread" class="disqus-thread">
+              <i>加载评论框需要翻墙</i>
+            </div>
+        </div>
+        <!-- disqus 评论框 end -->
+    
+    
+        <!-- livere 评论框 start -->
+        <div class="comment">
+            <div id="lv-container" data-id="city" data-uid="your_livere_uid"></div>
+        </div>
+        <!-- livere 评论框 end -->
+        
   </div>
+  <aside>
+    
+  </aside>
 </main>
+
+<!-- disqus 公共JS代码 -->
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname = "your_disqus_shortname";
+  var disqus_identifier = "http://yoursite.com/about/index.html";
+  var disqus_url = "http://yoursite.com/about/index.html";
+
+  isAgent(getDisqus)
+
+  // determine user agent in China
+  function isAgent(cb) {
+    var url = '//graph.facebook.com/feed?callback=h';
+    var xhr = new XMLHttpRequest();
+    var called = false;
+    xhr.open('GET', url);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+      called = true;
+      cb(true);
+      }
+    };
+    xhr.send();
+    // timeout 1s, this facebook API is very fast.
+    setTimeout(function() {
+      if (!called) {
+      xhr.abort();
+      cb(false)
+      }
+    }, 1000);
+  }
+
+  function getDisqus(isAgent) {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
+    dsq.async = true
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
+  }
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+<script type="text/javascript">
+  (function(d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+
+      if (typeof LivereTower === 'function') { return; }
+
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+
+      e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+
 
   <footer>
   <div class="copyright">
