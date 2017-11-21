@@ -481,6 +481,7 @@ header {
     text-align: right; }
   .markdown-body code,
   .markdown-body tt {
+    color: #c7254e;
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
